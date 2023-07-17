@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--[ Meta for browser ]-->
+    <meta charset='UTF-8'/>
+    <meta content='width=device-width, initial-scale=1, user-scalable=1, minimum-scale=1, maximum-scale=1' name='viewport'/>
+    <meta content='IE=edge' http-equiv='X-UA-Compatible'/>
+
+    <title>Lift Mobi</title>
+    <!-- META DETAILS, SEO CONFIGURATION -->
+    <meta name="description" content="Lift Mobi is a tech-driven powerhouse of thinkers and doers, crafting inspiring campaigns that convey your brand's message to your target audience across digital channels">
+    <meta content='Lift Mobi' name='Author'/>
+    <link href='https://hunter87ff.github.io/client/propaco' rel='author'/>
+    <link href='Lift Mobi' rel='publisher'/>
+    <meta content='Lift Mobi' property='article:author'/>
+    <meta content='Lift Mobi' property='article:publisher'/>
+    <meta content='https://hunter87ff.github.io/client/propaco' name='twitter:site'/>
+    <meta content='Lift Mobi' name='twitter:creator'/>
+    <meta content='https://hunter87ff.github.iostatic/img/logo.png' property='og:image'/>
+    <meta content='https://hunter87ff.github.iostatic/img/logo.png' name='twitter:image'/>
+    <meta content='Lift Mobi' property='og:image:alt'/>
+
+    <!-- LINK RESOURCES -->
+    <link rel="stylesheet" href="static/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins&&family=PT+Sans+Narrow&family=Hind+Madurai&family=Pacifico&family=Bree+Serif&family=Bebas+Neue&display=swap">
+    <link rel="shortcut icon" href="static/img/logo.png" type="image/x-icon">
+    <noscript>Please Enable Javascript For This Site! Else It'll Not Work Properly!!</noscript>
+
+</head>
+<body>
+    <script src="static/js/jquery.js" type="text/javascript"></script>
+    <header class="header">
+        <img src="static/img/logo.png" class="logo"/>
+        <div class="menu-button" id="menu-btn" onclick="toggleMenu()">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+        <!--<i id="menu-btn" onclick="menu_toggle()" class="fa-solid fa-bars"></i>-->
+        <ul class="nav">
+            <img src="static/img/logo.png" /> <br>
+            <li><a href="#" target="_blank">Performance</a></li>
+            <li><a href="#" target="_blank">Production</a></li>
+            <li><a href="#" target="_blank">Marketing</a></li>
+            <li><a href="#" target="_blank">GameX</a></li>
+            <li><a href="#" target="_blank">Contact</a></li>
+            <li><a href="#" target="_blank">Why Us?</a></li>
+            <div class="menu-social">
+                <i class="fa-brands fa-facebook-square" style="color:#0176fc;"></i>
+                <i class="fa-brands fa-instagram-square" style="color:#fc016a;"></i>
+                <i class="fa-brands fa-twitter-square" style="color:#01b5fc ;"></i>
+                <i class="fa-brands fa-youtube-square" style="color:#fc0101 ;"></i>
+            </div>
+        </ul>
+    </header>
+
+    <section class="cont">
+    {% block content %}
+        {# Template inserted here #}
+    {% endblock %}
+    </section>
+
+    <!-- Footer Start -->
+    <footer>
+    <div class="row">
+    <div class="col about" style="order:1 ;">
+        <h3>Lift Mobi</h3>
+        <p style="max-width: 200px;">We're a tech-driven powerhouse of thinkers and doers, crafting inspiring campaigns that convey your brand's message to your target audience across digital channels</p>
+        <div class="social" style="font-size: 40px;">
+            <i class="fa-brands fa-facebook-square" style="color:#0176fc;"></i>
+            <i class="fa-brands fa-instagram-square" style="color:#fc016a;"></i>
+            <i class="fa-brands fa-twitter-square" style="color:#01b5fc ;"></i>
+            <i class="fa-brands fa-youtube-square" style="color:#fc0101 ;"></i>
+            <i class="fa-brands fa-whatsapp-square" style="color:#04a304 ;"></i>
+        </div>
+    </div>
+    <div  class="col links" style="order:2;">
+        <h3>Useful Links</h3>
+        <ul>
+            <li><a href="#">Career</a></li>
+            <li><a href="#">Partnership</a></li>
+            <li><a href="#">Support</a></li>
+            <li><a href="#">Advertisement</a></li>
+        </ul>
+    </div>
+    <div class="col links" style="order:3;">
+        <h3>Some Links</h3>
+        <ul>
+            <li><a href="/faq">F.A.Q</a></li>
+            <li><a href="/cookies-policy">Cookies Policy</a></li>
+            <li><a href="/terms-of-services">Terms Of Service</a></li>
+            <li><a href="/privacy-policy">Privacy Policy</a></li>
+        </ul>
+    </div>
+    <div class="col subscribe" style="order:4 ;">
+        <h3>Newsletter</h3>
+        <div>
+            <input id="email" required type="email" placeholder="Your email id here" />
+            <button type="submit" id="sub-btn" onclick="subscribe()">Subscribe</button>
+        </div>
+    </div>
+    </div>
+</div>
+    <div class="row copyright">
+        <div class="footer-menu">  
+            <a href="/">Home</a>
+            <a href="/about">About</a>
+            <a href="/contact">Contact</a>
+            <a href="/blog">Blog</a>
+            <a href="/social">Social</a>
+        </div>
+        <p>Copyright &copy; 2023 LiftMobi</p>
+</footer>
+<script src="static/js/script.js"></script>
+
+</body>
+</html>
+
+
