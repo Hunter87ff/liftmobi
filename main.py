@@ -31,6 +31,10 @@ users = {
 	"propaco@gmail.com" : "liftmobi12"
 }
 
+@app.errorhandler(404)
+def page_not_found(e):
+    return render_template('404.html'), 404
+
 @app.route("/")
 def home():
 	return render_template("index.html")
@@ -55,6 +59,21 @@ def dash():
 	"members" : users
 	}
 	return render_template("dashboard.html", obj=obj)
+
+
+@app.route("/api/portal")
+def api_portal():
+	messages = get_all_db()
+	obj = {
+	"view" : open("data.txt", 'r').read(),
+	"lmsg" : len(messages),
+	"lmem": len(users),
+	"uptime" : "4h 32m",
+	"messages" : messages,
+	"members" : users
+	}
+	return jsonify(obj)
+
 
 @app.route("/api/contact", methods=["POST"])
 def  api_contact():
