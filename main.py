@@ -100,4 +100,4 @@ def api_delmsg():
 	else:
 		return "Something Went Wrong. failed to delete!!", 200
 
-app.run()
+app.run(host="0.0.0.0", port=8080)
